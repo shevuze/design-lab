@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body{
+	font: 300 14px/1.5 Lato, sans-serif;
+	color: #3c3c3c;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.ba-container--small{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	line-height: 1.3;
+}
+
+p {
+	margin-top: 0;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+button {
+	background: #393939;
+	border: none;
+	color: #fff;
+	padding: 20px;
+	min-width: 396px;
+}
+
+button:hover {
+	background: #536C8B;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header {
+	background: #A5B6C9 url('../img/hero-bg.jpg') 50% no-repeat;
+	background-size: cover;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 280px 0 115px;
+	min-height: 100vh;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	position: relative;
+}
+
+.ba-logo {
+	margin-bottom: 68px;
+	display: inline-block;
+}
+
+.ba-header__title {
+	font-size: 54px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin: 0 0 36px;
+	color: rgb(255, 255, 255, 0.7);
+}
+
+.ba-header-subtitle {
+	margin-bottom: 276px;
+}
+
+.ba-scroll {
+	display: block;
+	width: 32px;
+	height: 42px;
+	position: absolute;
+	bottom: 110px;
+	left: 50%;
+	margin-left: -15px;
+
+}
+
+.ba-scroll:hover {
+	opacity: 0.6;
+}
+
+
+/*ba-about-us*/
+
+.ba-about-us {
+	padding: 160px 0;
+}
+
+.ba-box {
+	border: 2px solid #3c3c3c;
+	border-width: 0 2px 2px;
+	text-align: center;
+	padding: 68px 22px 34px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	font-size: 16px;
+}
+
+.ba-box:before,
+.ba-box:after {
+	display: block;
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: #3c3c3c;
+	width: 26%;
+	top: 0;
+}
+
+.ba-box:before {
+	left: 0;
+}
+
+.ba-box:after {
+	right: 0;
+}
+
+.ba-box--white {
+	border-color: #fff;
+}
+
+.ba-box--white:before,
+.ba-box--white:after {
+	background: #fff;
+}
+
+.ba-box--tall {
+	padding: 112px 10px 26px;
+}
+
+.ba-box__title {
+	position: absolute;
+	left: 12%;
+	top: -25px;
+	margin: 0;
+	text-align: center;
+	width: 76%;
+	font-size: 34px;
+
+}
+
+.ba-box__info {
+	max-width: 510px;
+}
+
+/*ba-services*/
+
+.ba-services {
+	background: #A5B6C9 url('../img/services.jpg') 50% no-repeat;
+	color: #FFF;
+	padding: 128px 0 109px;
+	margin-bottom: 118px;
+
+}
+
+/*ba-about*/
+
+.ba-about {
+	margin-bottom: 112px;
+}
+
+.ba-about a {
+	margin-bottom: 40px;
+	display: block;
+}
+
+.ba-box__branch-title {
+	margin-bottom: 40px;
+
+}
+
+.ba-about__p {
+	margin-bottom: 90px;
+}
+
+/*.ba-our-work*/
+
+.ba-our-work {
+	margin-bottom: 136px;
+}
+
+.ba-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -9px;
+}
+
+.ba-col {
+	display: flex;
+	position: relative;
+}
+
+.ba-row + .ba-row {
+	margin-top: 9px;
+}
+
+.ba-row [class*="ba-col"] {
+	padding-left: 9px;
+}
+
+.ba-col-41 {
+	width: 42.2%;
+}
+
+.ba-col-28 {
+	width: 28.9%;
+}
+
+.ba-expml-img {
+	z-index: 1;
+
+}
+
+.ba-img-title {
+	color: #fff;
+	font-size: 34px;
+	font-weight: 700;
+	margin: 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 42px;
+	left: 44px;
+}
+
+.ba-contact-us {
+	margin-bottom: 62px;
+}
+
+.ba-footer {
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.ba-footer__logo {
+	padding-right: 36px;
+}
+
+.ba-copyright {
+	margin: 0;
+	padding-top: 10px;
+}
